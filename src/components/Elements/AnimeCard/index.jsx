@@ -4,7 +4,7 @@ const AnimeCard = (props) => {
     const { anime } = props
     return (
         <div>
-            <Card anime={anime}/>
+            <Card anime={anime} />
         </div>
     )
 }

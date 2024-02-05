@@ -18,6 +18,10 @@ const Carousel = () => {
     });
   }, []);
 
+  {
+    console.log(topAnime);
+  }
+
   const onAutoplayTimeLeft = (s, time, progress) => {
     progressCircle.current.style.setProperty('--progress', 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
@@ -48,7 +52,7 @@ const Carousel = () => {
                 <img src={anime.images.jpg.large_image_url} alt="" />
               </div>
               <div className="absolute bottom-0 right-0">
-                <AnimeCard anime={anime}/>
+                <AnimeCard anime={anime}></AnimeCard>
               </div>
               <div className="absolute bottom-80 left-10 text-white font-bold text-5xl uppercase tracking-wide font-sans sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                 {anime.title}

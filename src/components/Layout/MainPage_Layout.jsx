@@ -2,22 +2,16 @@ import { useEffect, useState } from "react";
 import { getTopAnime } from "../../services/anime_services";
 import Carousel from "../Elements/Carousel";
 import Navbar from "../Elements/Navbar";
+import ListAnimeCard from "../Elements/Fragments/List_Anime_Card";
 
 const MainPageLayout = () => {
-    const [topAnime, setTopAnime] = useState([]);
-    useEffect(() => {
-       getTopAnime((data) => {
-           setTopAnime(data)
-       }) 
-    },[])
-    {
-        console.log(topAnime)
-    }
+
 
     return (
-        <div className="bg-slate-700">
+        <div className="">
             <Navbar/>
-            <Carousel topAnime={topAnime}></Carousel>
+            <Carousel></Carousel>
+            <ListAnimeCard></ListAnimeCard>   
         </div>
     )
 }
