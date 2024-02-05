@@ -3,8 +3,8 @@ import MainPageLayout from "../components/Layout/mainPage_Layout";
 
 const MainPage = () => {
     return (
-        // <MainPageLayout/>
-        <Carousel/>
+        <MainPageLayout/>
+       
     )
 }
 

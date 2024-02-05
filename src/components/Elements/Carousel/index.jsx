@@ -44,7 +44,6 @@ const Carousel = () => {
           <SwiperSlide key={anime.id}>
             <div className='h-96 bg-slate-600 relative'>
               <div className="absolute bottom-0 right-0 h-96 w-full">
-                {/* Semi-transparent overlay */}
                 <div className="bg-black opacity-40 h-full w-full absolute"></div>
                 <img src={anime.images.jpg.large_image_url} alt="" />
               </div>
